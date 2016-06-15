@@ -73,7 +73,7 @@ $validation = R::validate($user); // The magic
 // If $validate does not return true, then we have some errors, and $validate will return an array of these errors
 if ($validation !== true)
 {
-    foreach ($validate as $field=>$message)
+    foreach ($validation as $field=>$message)
     {
         echo $message;
         echo "<hr>";
